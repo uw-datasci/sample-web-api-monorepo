@@ -1,10 +1,4 @@
-export type HealthRecord = {
-  status: "ok"
-}
-
-export type WelcomeRecord = {
-  message: string
-}
+import type { HealthRecord, WelcomeRecord } from "./system.types"
 
 export class SystemRepository {
   getHealthRecord(): HealthRecord {
