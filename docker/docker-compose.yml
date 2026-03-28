@@ -5,6 +5,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+      args:
+        NODE_VERSION: "24"
     ports:
       - "${API_PORT:-8000}:8000"
     environment:
