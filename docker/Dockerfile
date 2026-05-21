@@ -38,4 +38,4 @@ COPY --from=bundle --chown=app:app /srv /srv
 USER app
 EXPOSE 8000
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/server.js"]
